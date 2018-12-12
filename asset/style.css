@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box !important;
+}
+body{
+    background-color: #ab8384;
+    font-size: 16px;
+    color: black;
+    min-height: 100vh;
+    background-image: url('../asset/images/bg.jpg') !important;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#main_content{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0px;
+
+}
+#content{
+    width: 70%;
+    margin-top: 10px;
+    padding: 5px;
+}
+aside{
+    width: 28%;
+    margin-top: 10px;
+    padding: 5px;
+}
+.fav_color{
+    background-color: rgba(255, 255, 255, 0.5);
+    /*box-shadow: -4px 4px 5px rgba(200, 200, 200, 0.5), 0px 0px 10px rgba(200, 200, 200, 0.5);*/
+}
+
+#footer{
+    margin-top: 10px;
+    background-image: url('../asset/them psd/pease of them/images/footer.gif');
+}
+#footer p{
+    line-height: 50px;
+    font-size: 1rem;
+}
+#footer p a:hover{
+    transition: .1s ease-in-out;
+    line-height: 50px;
+    font-size: 1rem;
+}
+#footer p a{
+    text-decoration: none;
+}
+#navbar{
+    border-radius: 10px;
+}
+@media(max-width:768px){
+
+    #main_content{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+
+    }
+    #content{
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    }
+    aside{
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 10px;
+        padding: 5px;
+
+    }
+}
+/*.card{
+    box-shadow: -1px 3px 3px rgba(255,255,255,.3);
+}*/
+.card-header{
+    padding: 5px 12px 11px 12px;
+    background-image: url('../asset/them psd/pease of them/images/aheader.gif');
+}
+
+.card-footer{
+    background: url('../asset/them psd/pease of them/images/afooter.jpg') repeat-x;
+    margin-top: 0px;
+    padding-top: 1px;
+    height: 28px;
+    line-height: 5px;
+    text-align: right;
+}
+.card-footer table tr td{
+    font-size: 12px;
+    padding:.5rem 0rem;
+    
+}
+/*#close{
+    background-color: white;
+    border-radius: 10px;
+    width: 16px;
+    height: 20px;
+    line-height: 17px;
+}*/
+.navbar{
+    padding: 0px .1rem 0px .5rem;
+}
